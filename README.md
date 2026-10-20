@@ -259,6 +259,22 @@ V select · H pan (or hold Space) · T text · R rectangle · O ellipse · L lin
 I inhibition · M membrane · Ctrl+Z/Ctrl+Shift+Z undo/redo · Ctrl+D duplicate · Ctrl+G group ·
 Ctrl+[ / ] order · Shift+H/V flip · Ctrl+wheel zoom · Ctrl+0 fit · Ctrl+E export · / search.
 
+## Licence
+
+BioCraft's code is licensed under either of
+
+- the MIT licence ([LICENSE-MIT](LICENSE-MIT)), or
+- the Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE)),
+
+at your option. The BioCraft Originals drawings (the SVGs and PNGs in `originals/out/`) are
+dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+Every other icon keeps its source's licence (see [Icon licences](#icon-licences) and
+`THIRD-PARTY-NOTICES.txt`).
+
+Unless you explicitly state otherwise, any contribution you intentionally submit for inclusion in
+BioCraft, as defined in the Apache-2.0 licence, is dual-licensed as above, without any additional
+terms or conditions.
+
 ---
 
 BioRender is a trademark of its respective owner. BioCraft is an independent project, not
