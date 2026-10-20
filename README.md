@@ -10,10 +10,12 @@ searchable library of open biology icons that you can recolour part by part. AI 
 search the library and draft figures for you to refine (see [Use with AI agents](#use-with-ai-agents)).
 BioCraft was called BioCanvas; the internal crates keep the old name.
 
-**Download (Windows 10/11):** `BioCraft_<version>_x64-setup.exe` from
-[Releases](https://github.com/vinc395/BioCraft/releases). It installs for the current user, with
-the icon library included; see `tools/package/INSTALL.txt` for the steps. There is no macOS
-installer yet (`tools/package/build-mac.sh` builds one on a Mac).
+**Download** from [Releases](https://github.com/vinc395/BioCraft/releases), with the icon library
+inside: `BioCraft_<version>_x64-setup.exe` for Windows 10/11 (it installs for the current user), or
+`BioCraft_<version>_universal.dmg` for macOS 12 or later (Apple silicon and Intel). The Mac app
+isn't signed with an Apple developer certificate or notarised, so macOS blocks the first open:
+right-click BioCraft and choose Open, or click Open Anyway in System Settings › Privacy & Security.
+`tools/package/INSTALL.txt` has the steps.
 
 - **~12,000 icons** (~17,000 with colour variants) from Servier Medical Art (all 49 official PowerPoint
   kits, converted to SVG), NIH BioArt Source, the Reactome Icon Library, Bioicons, DBCLS TogoTV,
@@ -96,8 +98,9 @@ you point **File › Choose icon library folder…**.
 - **macOS**, on a Mac (Apple's tools only run there): `sh tools/package/build-mac.sh` →
   `dist/BioCraft_<version>_universal.dmg`, for Apple silicon and Intel Macs on macOS 12 or later.
   It installs what it needs (the Xcode command-line tools, Rust, the Tauri CLI).
-- **Both, on GitHub's machines**: `.github/workflows/build.yml` (its header says how it gets the
-  library); `library.yml` builds a library from the downloaded sources instead.
+- **On GitHub's machines** (no Mac needed): `.github/workflows/build.yml` builds the Windows, macOS
+  and Linux installers, or one of them (`gh workflow run build.yml -f platforms=macOS`); its header
+  says how it gets the library. `library.yml` builds a library from the downloaded sources instead.
 
 The installers carry the icon library, so each is about 600 MB. They install BioCraft for the
 current user (no admin rights needed) and make `.biocraft` files open in it.

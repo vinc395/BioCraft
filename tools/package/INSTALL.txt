@@ -1,6 +1,11 @@
 Installing BioCraft
 ===================
 
+Download the installer for your computer from https://github.com/vinc395/BioCraft/releases:
+BioCraft_<version>_x64-setup.exe for Windows, or BioCraft_<version>_universal.dmg for a Mac. Each
+is about 600 MB, because the icon library is inside. Neither is signed by a registered developer,
+so the first time, Windows and macOS ask you to confirm that you want to open it (below).
+
 Windows 10 or 11
   1. Run BioCraft_<version>_x64-setup.exe. It installs for you only: no administrator rights needed.
   2. Windows may say "Windows protected your PC", because the installer isn't signed by a
