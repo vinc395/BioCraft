@@ -1,4 +1,9 @@
-# BioCraft
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logo/biocraft-dark.svg">
+    <img src="docs/logo/biocraft.svg" alt="BioCraft" width="380">
+  </picture>
+</h1>
 
 A lightweight, offline editor for scientific figures — in the spirit of BioRender — with a
 searchable library of open biology icons that you can recolour part by part. AI coding agents can
@@ -250,3 +255,8 @@ You can still place files you exported yourself (File › Place image or SVG…,
 V select · H pan (or hold Space) · T text · R rectangle · O ellipse · L line · A arrow ·
 I inhibition · M membrane · Ctrl+Z/Ctrl+Shift+Z undo/redo · Ctrl+D duplicate · Ctrl+G group ·
 Ctrl+[ / ] order · Shift+H/V flip · Ctrl+wheel zoom · Ctrl+0 fit · Ctrl+E export · / search.
+
+---
+
+BioRender is a trademark of its respective owner. BioCraft is an independent project, not
+affiliated with, endorsed or sponsored by BioRender.
