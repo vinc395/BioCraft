@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="214" viewBox="0 0 124 214">
+  <title>Untitled-5</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M65.6 78 L66.38 128.9 C66.39 129.63 66.46 130.36 66.59 131.08 L79.07 202.86 C79.49 205.25 81.57 207 84 207 C86.43 207 88.51 205.25 88.93 202.86 L101.41 131.08 C101.54 130.36 101.61 129.63 101.62 128.9 L102.4 78 Z" fill="#e8f0f6" stroke="#383e42" stroke-width="1.78" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70.61 140.2 L81.44 202.45 C81.66 203.69 82.74 204.6 84 204.6 C85.26 204.6 86.34 203.69 86.56 202.45 L97.39 140.2 C97.39 138.76 91.39 137.6 84 137.6 C76.61 137.6 70.61 138.76 70.61 140.2 Z" fill="#baa2e6" stroke="#443261" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M92.32 168.4 L87.33 168.4 M98.27 134.2 L91.77 134.2 M99.31 109.8 L92.81 109.8 M99.67 86.4 L93.17 86.4" fill="none" stroke="#2c404e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M74.5 86 L82.5 86 C84.71 86 86.5 87.79 86.5 90 L86.5 108 C86.5 110.21 84.71 112 82.5 112 L74.5 112 C72.29 112 70.5 110.21 70.5 108 L70.5 90 C70.5 87.79 72.29 86 74.5 86 Z" fill="#f6f8f9" stroke="#3c3d3e" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+    <path d="M61 74 L61 80 C61 82.76 71.3 85 84 85 C96.7 85 107 82.76 107 80 L107 74 C107 71.24 96.7 69 84 69 C71.3 69 61 71.24 61 74 Z" fill="#d3e2ec" stroke="#343f46" stroke-width="1.78" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M102.5 74 C102.5 75.99 94.22 77.6 84 77.6 C73.78 77.6 65.5 75.99 65.5 74 C65.5 72.01 73.78 70.4 84 70.4 C94.22 70.4 102.5 72.01 102.5 74 Z" fill="#cddde8" stroke="#343f47" stroke-width="1.78" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 79 C53 79 50 71 55 66" fill="none" stroke="#0d385d" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21.71 15.35 C23.67 14.12 26.27 14.72 27.49 16.69 L33.03 25.55 C34.81 25.29 36.66 25.91 37.9 27.28 L39.67 26.17 C40.84 25.44 42.39 25.8 43.12 26.97 L59.02 52.41 C59.75 53.58 59.39 55.12 58.22 55.86 L56.45 56.97 C57.41 59.39 56.53 62.22 54.24 63.65 L51.7 65.24 C49.12 66.85 45.73 66.06 44.12 63.49 L26.63 35.5 C25.65 33.93 25.56 32.07 26.21 30.48 L20.37 21.14 C19.14 19.17 19.74 16.58 21.71 15.35 Z" fill="#78b1e9" stroke="#153f65" stroke-width="1.78" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

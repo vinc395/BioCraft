@@ -1,0 +1,28 @@
+[package]
+name = "biocraft"
+description = "BioCraft — local scientific illustration"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+default-run = "biocraft"
+
+[[bin]]
+name = "biocraft"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+base64.workspace = true
+biocanvas-core.workspace = true
+tauri = { version = "2", features = [] }
+rfd = "0.15"
+tiny_http = "0.12"
+# licence report: figure id, local export time, text widths for wrapping (all already in the build)
+sha2 = "0.10"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+ttf-parser = "0.25"

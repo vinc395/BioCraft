@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioCraft</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  // apply a saved light/dark choice before first paint (default: follow the system)
+  try { const t = (localStorage.getItem("biocraft.theme") || localStorage.getItem("biocanvas.theme")); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch {}
+  // and the side panels' saved widths and open/closed states (js/layout.js keeps them in step from then on)
+  try {
+    const p = JSON.parse(localStorage.getItem("biocraft.panels") || "{}"), r = document.documentElement;
+    for (const [k, lo, hi] of [["library", 220, 560], ["inspector", 240, 480]]) {
+      const w = p[k] && +p[k].width;
+      if (w) r.style.setProperty(`--${k}-w`, Math.min(hi, Math.max(lo, w)) + "px");
+      if ((p[k] && p[k].open === false) || (k === "inspector" && innerWidth < 1100)) r.dataset[k] = "collapsed";
+    }
+  } catch {}
+</script>
+</head>
+<body>
+<header id="topbar">
+  <button id="btn-home" type="button" title="Home: all your figures" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11.5L12 4.5l8.5 7"/><path d="M6 10v9.5h4.5V15h3v4.5H18V10"/></svg></button>
+  <div class="brand"><svg class="wordmark" viewBox="26 36 1012 232" role="img" aria-label="BioCraft"><defs><linearGradient id="bc-g1" x1="30" y1="60" x2="250" y2="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#253747"/><stop offset="0.55" stop-color="#1d2e3c"/><stop offset="1" stop-color="#233745"/></linearGradient><linearGradient id="bc-g2" x1="374" y1="80" x2="289" y2="220" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#49bd9c"/><stop offset="0.45" stop-color="#38b2a1"/><stop offset="1" stop-color="#1e8398"/></linearGradient><linearGradient id="bc-g3" x1="426" y1="108" x2="385" y2="245" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#35b8e8"/><stop offset="0.48" stop-color="#2c9fe3"/><stop offset="1" stop-color="#207ed7"/></linearGradient><linearGradient id="bc-g4" x1="419" y1="126" x2="357" y2="243" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#288db7"/><stop offset="0.55" stop-color="#11719e"/><stop offset="1" stop-color="#07549a"/></linearGradient><linearGradient id="bc-g5" x1="370" y1="116" x2="344" y2="214" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#36b09f"/><stop offset="0.58" stop-color="#288f99"/><stop offset="1" stop-color="#1d79b6"/></linearGradient><linearGradient id="bc-g6" x1="222.9" y1="42.5" x2="246.4" y2="89.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#51cfa2"/><stop offset="0.5" stop-color="#43bca9"/><stop offset="1" stop-color="#258b9e"/></linearGradient><linearGradient id="bc-g7" x1="399.9" y1="66.5" x2="418.4" y2="103.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#49c99d"/><stop offset="1" stop-color="#35a69d"/></linearGradient><linearGradient id="bc-g8" x1="307" y1="225" x2="345" y2="263" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#319be7"/><stop offset="1" stop-color="#2084d5"/></linearGradient><linearGradient id="bc-g9" x1="480" y1="50" x2="1030" y2="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#48525f"/><stop offset="0.52" stop-color="#424c59"/><stop offset="1" stop-color="#485360"/></linearGradient></defs><g><g><path class="ink" d="M34 59 L128 59 C166 59 190 79 190 109 C190 128 181 141 168 151 C192 160 203 175 203 202 C203 235 175 256 134 256 L34 256 Z M70 89 L70 139 L122 139 C143 139 154 130 154 114 C154 97 144 89 123 89 Z M70 169 L70 225 L128 225 C151 225 166 215 166 198 C166 180 153 169 128 169 Z" fill="url(#bc-g1)" fill-rule="evenodd"/><path class="ink" d="M219 110 L255 110 L255 256 L219 256 Z" fill="url(#bc-g1)"/></g></g><g><g><path d="M389 84 C361 72 328 82 306 105 C282 127 271 158 280 187 C286 204 295 216 308 225 L317 216 C303 198 303 174 310 157 C321 133 331 114 354 101 C368 92 381 88 389 84 Z" fill="url(#bc-g2)" fill-rule="evenodd"/><path d="M426 107 C442 127 453 154 448 176 C445 199 430 222 406 234 C387 244 366 249 344 244 C367 231 388 218 405 198 C418 179 426 155 422 134 C421 126 419 120 417 112 Z" fill="url(#bc-g3)" fill-rule="evenodd"/><path d="M417 112 C429 142 420 175 399 200 C384 218 364 235 344 244 C365 226 378 210 388 192 C405 165 424 136 417 112 Z" fill="url(#bc-g4)" fill-rule="evenodd"/></g></g><g><g><path d="M347.5 116 L394.5 116 C398.642 116 402 119.358 402 123.5 L402 123.5 C402 127.642 398.642 131 394.5 131 L347.5 131 C343.358 131 340 127.642 340 123.5 L340 123.5 C340 119.358 343.358 116 347.5 116 Z" fill="url(#bc-g5)"/><path d="M328 148 L395 148 C398.866 148 402 151.134 402 155 L402 155 C402 158.866 398.866 162 395 162 L328 162 C324.134 162 321 158.866 321 155 L321 155 C321 151.134 324.134 148 328 148 Z" fill="url(#bc-g5)"/><path d="M318.5 179 L381.5 179 C385.09 179 388 181.91 388 185.5 L388 185.5 C388 189.09 385.09 192 381.5 192 L318.5 192 C314.91 192 312 189.09 312 185.5 L312 185.5 C312 181.91 314.91 179 318.5 179 Z" fill="url(#bc-g5)"/><path d="M343 203 L374 203 C377.314 203 380 205.686 380 209 L380 209 C380 212.314 377.314 215 374 215 L343 215 C339.686 215 337 212.314 337 209 L337 209 C337 205.686 339.686 203 343 203 Z" fill="url(#bc-g5)"/></g></g><g><g><path d="M260.5 66 C260.5 78.979 249.979 89.5 237 89.5 C224.021 89.5 213.5 78.979 213.5 66 C213.5 53.021 224.021 42.5 237 42.5 C249.979 42.5 260.5 53.021 260.5 66 Z" fill="url(#bc-g6)"/><path d="M429.5 85 C429.5 95.217 421.217 103.5 411 103.5 C400.783 103.5 392.5 95.217 392.5 85 C392.5 74.783 400.783 66.5 411 66.5 C421.217 66.5 429.5 74.783 429.5 85 Z" fill="url(#bc-g7)"/><path d="M345 244 C345 254.493 336.493 263 326 263 C315.507 263 307 254.493 307 244 C307 233.507 315.507 225 326 225 C336.493 225 345 233.507 345 244 Z" fill="url(#bc-g8)"/></g></g><g><g><path class="ink" d="M636 81 L618 104 C602 89 586 83 564 83 C520 83 495 114 495 157 C495 202 524 230 564 230 C587 230 605 219 618 205 L638 225 C619 249 595 259 565 259 C504 259 463 217 463 158 C463 100 505 55 565 55 C594 55 617 65 636 81 Z" fill="url(#bc-g9)" fill-rule="evenodd"/><path class="ink" d="M651 116 L679 116 L679 144 C691 121 712 109 735 115 L731 142 C704 134 679 155 679 188 L679 256 L651 256 Z" fill="url(#bc-g9)" fill-rule="evenodd"/><path class="ink" d="M742 138 C757 122 775 113 800 113 C837 113 861 135 861 171 L861 256 L834 256 L834 237 C822 252 805 259 781 259 C751 259 731 244 731 218 C731 188 754 170 791 170 L833 170 L833 164 C833 145 820 136 799 136 C781 136 765 142 758 154 Z M833 190 L797 190 C774 190 760 199 760 216 C760 230 772 239 788 239 C813 239 833 222 833 204 Z" fill="url(#bc-g9)" fill-rule="evenodd"/><path class="ink" d="M885 255 L885 140 L865 140 L865 116 L885 116 L885 98 C885 63 903 45 934 45 C941 45 948 46 955 48 L952 69 C945 67 940 66 934 66 C920 66 913 75 913 96 L913 116 L941 116 L941 140 L913 140 L913 255 Z" fill="url(#bc-g9)" fill-rule="evenodd"/><path class="ink" d="M965 116 L965 75 L993 75 L993 116 L1029 116 L1029 140 L993 140 L993 202 C993 223 1000 233 1018 233 L1031 232 L1031 256 C1024 258 1015 258 1008 258 C979 258 965 242 965 208 L965 140 L946 140 L946 116 Z" fill="url(#bc-g9)" fill-rule="evenodd"/></g></g></svg></div>
+  <nav id="menus">
+    <div class="menu" data-menu="file"><button>File</button></div>
+    <div class="menu" data-menu="edit"><button>Edit</button></div>
+    <div class="menu" data-menu="insert"><button>Insert</button></div>
+    <div class="menu" data-menu="arrange"><button>Arrange</button></div>
+    <div class="menu" data-menu="view"><button>View</button></div>
+    <div class="menu" data-menu="help"><button>Help</button></div>
+  </nav>
+  <!-- data-fold: a window too narrow for the whole bar moves these into the ⋯ menu, lowest number first -->
+  <div class="sep" data-fold="5"></div>
+  <div id="tools" class="toolgroup" role="toolbar" aria-label="Tools">
+    <button data-tool="select" data-fold="5" title="Select (V)"><svg viewBox="0 0 24 24"><path d="M5 3l13 8-6 1.4 3.6 6.6-2.6 1.4-3.6-6.6L5 18z"/></svg></button>
+    <button data-tool="hand" data-fold="5" title="Pan (H, or hold Space)"><svg viewBox="0 0 24 24"><path d="M8 11V5.5a1.5 1.5 0 013 0V10m0-5.5a1.5 1.5 0 013 0V10m0-3.5a1.5 1.5 0 013 0V14c0 4-2.5 7-6.5 7S5 18.5 4 16l-1.5-4a1.4 1.4 0 012.5-1.2L7 14V8.5a1.5 1.5 0 013 0" fill="none" stroke-width="1.6"/></svg></button>
+    <button data-tool="text" data-fold="5" title="Text (T)"><svg viewBox="0 0 24 24"><path d="M5 5h14v3h-2V7h-4v11h2v2H9v-2h2V7H7v1H5z"/></svg></button>
+    <button data-tool="rect" data-fold="4" title="Rectangle (R)"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2" fill="none" stroke-width="1.8"/></svg></button>
+    <button data-tool="ellipse" data-fold="4" title="Ellipse (O)"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="8" ry="6" fill="none" stroke-width="1.8"/></svg></button>
+    <button data-tool="line" data-fold="4" title="Line (L)"><svg viewBox="0 0 24 24"><path d="M5 19L19 5" fill="none" stroke-width="1.8"/></svg></button>
+    <button data-tool="arrow" data-fold="4" title="Arrow (A)"><svg viewBox="0 0 24 24"><path d="M5 19L17 7" fill="none" stroke-width="1.8"/><path d="M19 5l-1.5 6.5-5-5z"/></svg></button>
+    <button data-tool="inhibit" data-fold="4" title="Inhibition ⊣ (I)"><svg viewBox="0 0 24 24"><path d="M4 12h14" fill="none" stroke-width="1.8"/><path d="M19 6v12" fill="none" stroke-width="2.4"/></svg></button>
+    <button data-tool="membrane" data-fold="4" title="Brush: membrane, DNA, cell layers, filaments, repeated icons (M)"><svg viewBox="0 0 24 24"><g fill="none" stroke-width="1.2"><path d="M3 9c3-2 6-2 9 0s6 2 9 0M3 15c3-2 6-2 9 0s6 2 9 0"/></g><g><circle cx="5" cy="8.4" r="1.4"/><circle cx="9" cy="7.4" r="1.4"/><circle cx="13" cy="8.4" r="1.4"/><circle cx="17" cy="9" r="1.4"/><circle cx="5" cy="15.6" r="1.4"/><circle cx="9" cy="16.4" r="1.4"/><circle cx="13" cy="15.6" r="1.4"/><circle cx="17" cy="15" r="1.4"/></g></svg></button>
+  </div>
+  <div class="sep" data-fold="2"></div>
+  <div class="toolgroup" data-fold="2">
+    <button id="btn-undo" title="Undo (Ctrl+Z)"><svg viewBox="0 0 24 24"><path d="M9 7H4V2M4 7a9 9 0 11-1 8" fill="none" stroke-width="1.8"/></svg></button>
+    <button id="btn-redo" title="Redo (Ctrl+Shift+Z)"><svg viewBox="0 0 24 24"><path d="M15 7h5V2m0 5a9 9 0 101 8" fill="none" stroke-width="1.8"/></svg></button>
+  </div>
+  <div class="spacer"></div>
+  <!-- the figure's name (click to rename) and whether it is saved: main.js showSaveState -->
+  <div id="docbar"><button id="doc-name" type="button" data-fold="6"></button><button id="save-state" type="button" aria-live="polite"></button></div>
+  <div class="spacer"></div>
+  <div class="toolgroup">
+    <button id="btn-more" class="folded" title="More tools and view controls" aria-label="More tools and view controls" aria-haspopup="menu"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg></button>
+    <button id="btn-theme" data-fold="1" title="Theme"><svg viewBox="0 0 24 24"><path id="theme-icon" d=""/></svg></button>
+  </div>
+  <div class="toolgroup zoom">
+    <button id="btn-zoom-out" data-fold="3" title="Zoom out (Ctrl −)">−</button>
+    <button id="zoom-label" title="Fit to window (Ctrl 0)">100%</button>
+    <button id="btn-zoom-in" data-fold="3" title="Zoom in (Ctrl +)">+</button>
+  </div>
+  <button id="btn-export" class="primary">Export</button>
+</header>
+
+<main id="workspace">
+  <aside id="library" class="side" aria-label="Icon library">
+    <button class="rail" data-panel="library" title="Show the library (Ctrl+B)" aria-label="Show the library panel" aria-expanded="false">
+      <span class="rail-chev"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"/></svg></span>
+      <span class="rail-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><circle cx="17" cy="17" r="3.5"/></svg></span>
+      <span class="rail-label">Library</span>
+    </button>
+    <div class="lib-head">
+      <div class="search-row">
+        <div class="search">
+          <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke-width="2"/></svg>
+          <input id="lib-search" type="search" placeholder="Search icons…" autocomplete="off" spellcheck="false">
+        </div>
+        <button class="panel-toggle" data-panel="library" title="Hide the library (Ctrl+B)" aria-label="Hide the library panel" aria-expanded="true"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5L5.5 8 10 12.5"/></svg></button>
+      </div>
+      <div class="lib-filters">
+        <select id="lib-pack" title="Source"><option value="">All sources</option></select>
+        <select id="lib-license" title="Licence">
+          <option value="">Any licence</option>
+          <option value="free">No attribution needed</option>
+          <option value="nosa">No share-alike</option>
+        </select>
+      </div>
+    </div>
+    <div id="lib-cats" class="lib-cats"></div>
+    <div id="lib-status" class="lib-status"></div>
+    <div id="lib-grid" class="lib-grid" tabindex="0"></div>
+  </aside>
+  <div class="splitter" data-panel="library" role="separator" aria-orientation="vertical" aria-label="Library panel width" tabindex="0" title="Drag to resize the library · double-click for its usual width"></div>
+
+  <section id="stage-wrap">
+    <svg id="stage" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid-pattern" patternUnits="userSpaceOnUse" width="10" height="10">
+          <path d="M10 0H0V10" fill="none" stroke="#d6dde6" stroke-width="0.5"/>
+        </pattern>
+        <filter id="paper-shadow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="1.5" stdDeviation="3" flood-color="#0f1b2d" flood-opacity="0.18"/>
+        </filter>
+      </defs>
+      <g id="viewport">
+        <rect id="paper-shadow-rect" filter="url(#paper-shadow)" fill="#fff"/>
+        <rect id="paper" fill="#fff"/>
+        <rect id="grid" fill="url(#grid-pattern)" pointer-events="none"/>
+        <g id="content"></g>
+        <g id="guides" pointer-events="none"></g>
+      </g>
+      <g id="overlay"></g>
+    </svg>
+    <div id="drop-hint">Drop to add to figure</div>
+    <textarea id="text-editor" spellcheck="true"></textarea>
+    <div id="statusbar"><span id="status-pos"></span><span id="status-msg"></span><span id="status-doc"></span></div>
+  </section>
+  <div class="splitter" data-panel="inspector" role="separator" aria-orientation="vertical" aria-label="Inspector panel width" tabindex="0" title="Drag to resize the inspector · double-click for its usual width"></div>
+
+  <aside id="inspector" class="side" aria-label="Inspector">
+    <button class="rail" data-panel="inspector" title="Show the inspector (Ctrl+Shift+B)" aria-label="Show the inspector panel" aria-expanded="false">
+      <span class="rail-chev"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5L5.5 8 10 12.5"/></svg></span>
+      <span class="rail-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></svg><span class="rail-dot"></span></span>
+      <span class="rail-label">Inspector</span>
+    </button>
+    <div class="tabs">
+      <button class="panel-toggle" data-panel="inspector" title="Hide the inspector (Ctrl+Shift+B)" aria-label="Hide the inspector panel" aria-expanded="true"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"/></svg></button>
+      <button data-tab="design" class="active">Design</button>
+      <button data-tab="layers">Layers</button>
+      <button data-tab="credits">Credits</button>
+    </div>
+    <div id="tab-design" class="tab active"></div>
+    <div id="tab-layers" class="tab"></div>
+    <div id="tab-credits" class="tab"></div>
+  </aside>
+</main>
+
+<div id="popover-root"></div>
+<div id="toast"></div>
+<input id="file-input" type="file" hidden multiple accept=".svg,.png,.jpg,.jpeg,.webp,.gif,.biocraft,.biocanvas,.json">
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

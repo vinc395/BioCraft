@@ -1,0 +1,33 @@
+[workspace]
+resolver = "2"
+members = ["crates/core", "crates/libbuild", "app"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/vinc395/BioCraft"
+
+[workspace.dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rayon = "1"
+# resvg/usvg 0.45 is the line svg2pdf 0.13 is built on; keep them in step.
+resvg = { version = "0.45", default-features = false, features = ["text", "system-fonts", "memmap-fonts", "raster-images"] }
+svg2pdf = "0.13"
+png = "0.17"
+tiff = "0.9"
+base64 = "0.22"
+biocanvas-core = { path = "crates/core" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+strip = true
+panic = "unwind"
+
+# Keep debug builds usable: SVG parsing/rendering is slow unoptimised.
+[profile.dev.package."*"]
+opt-level = 2

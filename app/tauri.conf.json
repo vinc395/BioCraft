@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "BioCraft",
+  "version": "0.1.0",
+  "identifier": "app.biocraft.desktop",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "BioCraft",
+        "width": 1480,
+        "height": 920,
+        "minWidth": 960,
+        "minHeight": 600,
+        "dragDropEnabled": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "BioCraft",
+    "category": "Education",
+    "shortDescription": "Local scientific illustration",
+    "longDescription": "BioCraft is a lightweight, offline editor for scientific figures with a searchable library of open biology icons (Servier Medical Art, NIH BioArt, Bioicons and more) that can be recoloured.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {},
+    "fileAssociations": [
+      {
+        "ext": [
+          "biocraft",
+          "biocanvas"
+        ],
+        "name": "BioCraft figure",
+        "description": "BioCraft figure",
+        "role": "Editor",
+        "rank": "Owner",
+        "mimeType": "application/x-biocraft",
+        "exportedType": {
+          "identifier": "app.biocraft.figure",
+          "conformsTo": [
+            "public.json",
+            "public.data"
+          ]
+        }
+      }
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "installerIcon": "icons/icon.ico"
+      }
+    },
+    "macOS": {
+      "minimumSystemVersion": "12.0",
+      "signingIdentity": "-"
+    }
+  }
+}

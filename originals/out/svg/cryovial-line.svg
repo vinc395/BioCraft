@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="200" viewBox="0 0 100 200">
+  <title>Untitled-11</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M29 58 L29 185 C29 187.75 31.25 190 34 190 L66 190 C68.75 190 71 187.75 71 185 L71 58 Z" fill="#e8f0f6" stroke="#383e42" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31.6 100 L31.6 154.99 C31.6 156.88 32.49 158.67 34.01 159.8 L45.81 168.61 C48.3 170.46 51.7 170.46 54.19 168.61 L65.99 159.8 C67.51 158.67 68.4 156.88 68.4 154.99 L68.4 100 C68.4 98.23 60.16 96.8 50 96.8 C39.84 96.8 31.6 98.23 31.6 100 Z" fill="#f7b8c8" stroke="#592d3b" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 172 C42 176 58 176 69 172" fill="none" stroke="#2c404e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35 68 L51 68 C52.66 68 54 69.34 54 71 L54 135 C54 136.66 52.66 138 51 138 L35 138 C33.34 138 32 136.66 32 135 L32 71 C32 69.34 33.34 68 35 68 Z" fill="#f6f8f9" stroke="#3c3d3e" stroke-width="1.17" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <path d="M68 112 L60 112 M68 124 L63 124 M68 136 L60 136 M68 148 L63 148 M68 160 L60 160" fill="none" stroke="#2c404e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 12 L69 12 C72.31 12 75 14.69 75 18 L75 56 C75 59.31 72.31 62 69 62 L31 62 C27.69 62 25 59.31 25 56 L25 18 C25 14.69 27.69 12 31 12 Z" fill="#a086d2" stroke="#3c2b58" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30.44 20 L30.44 58 M35.33 20 L35.33 58 M40.22 20 L40.22 58 M45.11 20 L45.11 58 M50 20 L50 58 M54.89 20 L54.89 58 M59.78 20 L59.78 58 M64.67 20 L64.67 58 M69.56 20 L69.56 58" fill="none" stroke="#1e2934" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

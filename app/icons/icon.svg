@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- BioCraft app icon: the DNA "o" from the BioCraft wordmark on a light tile -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef4f8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="374" y1="80" x2="289" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#49bd9c"/><stop offset="0.45" stop-color="#38b2a1"/><stop offset="1" stop-color="#1e8398"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="426" y1="108" x2="385" y2="245" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#35b8e8"/><stop offset="0.48" stop-color="#2c9fe3"/><stop offset="1" stop-color="#207ed7"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="419" y1="126" x2="357" y2="243" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#288db7"/><stop offset="0.55" stop-color="#11719e"/><stop offset="1" stop-color="#07549a"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="370" y1="116" x2="344" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#36b09f"/><stop offset="0.58" stop-color="#288f99"/><stop offset="1" stop-color="#1d79b6"/>
+    </linearGradient>
+    <linearGradient id="g7" x1="399.9" y1="66.5" x2="418.4" y2="103.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#49c99d"/><stop offset="1" stop-color="#35a69d"/>
+    </linearGradient>
+    <linearGradient id="g8" x1="307" y1="225" x2="345" y2="263" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#319be7"/><stop offset="1" stop-color="#2084d5"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#tile)" stroke="#d5e1ea" stroke-width="4"/>
+  <g transform="translate(256 258) scale(1.78) translate(-366 -165)">
+    <path d="M389 84 C361 72 328 82 306 105 C282 127 271 158 280 187 C286 204 295 216 308 225 L317 216 C303 198 303 174 310 157 C321 133 331 114 354 101 C368 92 381 88 389 84 Z" fill="url(#g2)" fill-rule="evenodd"/>
+    <path d="M426 107 C442 127 453 154 448 176 C445 199 430 222 406 234 C387 244 366 249 344 244 C367 231 388 218 405 198 C418 179 426 155 422 134 C421 126 419 120 417 112 Z" fill="url(#g3)" fill-rule="evenodd"/>
+    <path d="M417 112 C429 142 420 175 399 200 C384 218 364 235 344 244 C365 226 378 210 388 192 C405 165 424 136 417 112 Z" fill="url(#g4)" fill-rule="evenodd"/>
+    <g fill="url(#g5)">
+      <rect x="340" y="116" width="62" height="15" rx="7.5"/>
+      <rect x="321" y="148" width="81" height="14" rx="7"/>
+      <rect x="312" y="179" width="76" height="13" rx="6.5"/>
+      <rect x="337" y="203" width="43" height="12" rx="6"/>
+    </g>
+    <circle cx="411" cy="85" r="18.5" fill="url(#g7)"/>
+    <circle cx="326" cy="244" r="19" fill="url(#g8)"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="166" viewBox="0 0 202 166">
+  <title>Untitled-29</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M19 51 L73 19 M19 51 L73 83 M19 51 L73 115 M19 83 L73 51 M19 83 L73 83 M19 83 L73 115 M19 83 L73 147 M19 115 L73 51 M19 115 L73 83 M19 115 L73 115 M19 115 L73 147 M73 19 L129 19 M73 19 L129 51 M73 19 L129 83 M73 19 L129 115 M73 51 L129 19 M73 51 L129 51 M73 51 L129 83 M73 51 L129 115 M73 83 L129 51 M73 83 L129 115 M73 83 L129 147 M73 115 L129 19 M73 115 L129 83 M73 115 L129 115 M73 115 L129 147 M73 147 L129 19 M73 147 L129 51 M73 147 L129 115 M73 147 L129 147 M129 51 L183 67 M129 51 L183 99 M129 115 L183 67 M129 115 L183 99 M129 147 L183 99" fill="none" stroke="#383e45" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 51 L73 51 M19 51 L73 147 M19 83 L73 19 M19 115 L73 19 M73 19 L129 147 M73 51 L129 147 M73 83 L129 19 M73 83 L129 83 M73 115 L129 51 M73 147 L129 83 M129 19 L183 67 M129 19 L183 99 M129 83 L183 67 M129 83 L183 99 M129 147 L183 67" fill="none" stroke="#2b343e" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29 51 C29 56.52 24.52 61 19 61 C13.48 61 9 56.52 9 51 C9 45.48 13.48 41 19 41 C24.52 41 29 45.48 29 51 Z" fill="#a2cef0" stroke="#1e4159" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29 83 C29 88.52 24.52 93 19 93 C13.48 93 9 88.52 9 83 C9 77.48 13.48 73 19 73 C24.52 73 29 77.48 29 83 Z" fill="#a2cef0" stroke="#1e4159" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29 115 C29 120.52 24.52 125 19 125 C13.48 125 9 120.52 9 115 C9 109.48 13.48 105 19 105 C24.52 105 29 109.48 29 115 Z" fill="#a2cef0" stroke="#1e4159" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M83 19 C83 24.52 78.52 29 73 29 C67.48 29 63 24.52 63 19 C63 13.48 67.48 9 73 9 C78.52 9 83 13.48 83 19 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M83 51 C83 56.52 78.52 61 73 61 C67.48 61 63 56.52 63 51 C63 45.48 67.48 41 73 41 C78.52 41 83 45.48 83 51 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M83 83 C83 88.52 78.52 93 73 93 C67.48 93 63 88.52 63 83 C63 77.48 67.48 73 73 73 C78.52 73 83 77.48 83 83 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M83 115 C83 120.52 78.52 125 73 125 C67.48 125 63 120.52 63 115 C63 109.48 67.48 105 73 105 C78.52 105 83 109.48 83 115 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M83 147 C83 152.52 78.52 157 73 157 C67.48 157 63 152.52 63 147 C63 141.48 67.48 137 73 137 C78.52 137 83 141.48 83 147 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M139 19 C139 24.52 134.52 29 129 29 C123.48 29 119 24.52 119 19 C119 13.48 123.48 9 129 9 C134.52 9 139 13.48 139 19 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M139 51 C139 56.52 134.52 61 129 61 C123.48 61 119 56.52 119 51 C119 45.48 123.48 41 129 41 C134.52 41 139 45.48 139 51 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M139 83 C139 88.52 134.52 93 129 93 C123.48 93 119 88.52 119 83 C119 77.48 123.48 73 129 73 C134.52 73 139 77.48 139 83 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M139 115 C139 120.52 134.52 125 129 125 C123.48 125 119 120.52 119 115 C119 109.48 123.48 105 129 105 C134.52 105 139 109.48 139 115 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M139 147 C139 152.52 134.52 157 129 157 C123.48 157 119 152.52 119 147 C119 141.48 123.48 137 129 137 C134.52 137 139 141.48 139 147 Z" fill="#c4b5e7" stroke="#41365a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M193 67 C193 72.52 188.52 77 183 77 C177.48 77 173 72.52 173 67 C173 61.48 177.48 57 183 57 C188.52 57 193 61.48 193 67 Z" fill="#f8acbe" stroke="#5f2938" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M193 99 C193 104.52 188.52 109 183 109 C177.48 109 173 104.52 173 99 C173 93.48 177.48 89 183 89 C188.52 89 193 93.48 193 99 Z" fill="#f8acbe" stroke="#5f2938" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "bundle": {
+    "resources": {
+      "../library/index.json": "library/index.json",
+      "../library/packs/": "library/packs/",
+      "../THIRD-PARTY-NOTICES.txt": "THIRD-PARTY-NOTICES.txt"
+    }
+  }
+}

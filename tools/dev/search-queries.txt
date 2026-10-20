@@ -1,0 +1,152 @@
+# Queries for tuning the library search (crates/core/examples/searchq.rs):
+#   cargo run -p biocanvas-core --example searchq -- --file tools/dev/search-queries.txt
+# immune cells
+t cell
+T cells
+CD4 T cell
+CD8+
+Treg
+regulatory T cell
+Th17
+B cell
+plasma cell
+macrophage
+M1 macrophage
+monocyte
+neutrophil
+dendritic cell
+NK cell
+mast cell
+platelet
+red blood cell
+PBMC
+lymphocyte
+antigen presenting cell
+# synovium and joints
+synovium
+synovial fibroblast
+FLS
+rheumatoid arthritis
+osteoclast
+cartilage
+chondrocyte
+knee joint
+osteoarthritis
+bone erosion
+# molecules
+IL-6
+IL6
+interleukin 6
+TNF
+TNF-alpha
+TNF-α
+cytokine
+chemokine
+antibody
+monoclonal antibody
+mAb
+IgG
+GPCR
+ion channel
+MHC
+HLA
+TCR
+NF-kB
+JAK STAT
+# methods and lab
+flow cytometry
+FACS
+western blot
+ELISA
+PCR
+qPCR
+pipette
+microscope
+confocal microscope
+electron microscope
+scRNA-seq
+single cell RNA sequencing
+ATAC-seq
+ChIP-seq
+spatial transcriptomics
+Visium
+Xenium
+CODEX
+mass spectrometry
+centrifuge
+96 well plate
+petri dish
+cell culture
+mouse
+mice
+rat
+zebrafish
+# British spelling
+tumour
+haematopoietic
+haemoglobin
+oesophagus
+leukaemia
+anaemia
+colour
+foetus
+oestrogen
+faeces
+paediatric
+signalling
+fibre
+ischaemia
+oedema
+# typos
+macrophge
+mitochondira
+neutrofil
+lymphocite
+fibroblsat
+synovim
+osteoclsat
+# extra words
+flow cytometry machine
+lab pipette tool
+human heart anatomy
+mouse model
+blood vessel cross section
+cell membrane receptor
+nucleus of a cell
+kidney nephron
+lung alveoli
+brain neuron synapse
+tumor microenvironment
+inflamed joint
+# anatomy
+heart
+liver
+kidney
+lung
+brain
+gut
+stomach
+skin
+spleen
+lymph node
+thymus
+pancreas
+# other
+virus
+SARS-CoV-2
+covid
+coronavirus
+bacteria
+E. coli
+DNA
+mRNA
+CRISPR
+Cas9
+plasmid
+chromosome
+mitochondria
+endoplasmic reticulum
+golgi
+lysosome
+exosome
+extracellular vesicle

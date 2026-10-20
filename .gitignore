@@ -1,0 +1,17 @@
+target/
+.cache/
+# raw downloads; overrides/ (better icon names) is ours and is kept
+sources/*
+!sources/overrides/
+library/
+dist/
+node_modules/
+*.part
+app/gen/
+originals/out/preview/
+originals/out/probe/
+originals/out/sheet.html
+originals/probe*.mjs
+
+tools/vc/.big/
+tools/dev/out/

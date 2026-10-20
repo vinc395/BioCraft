@@ -1,0 +1,2 @@
+# shell scripts run on macOS and Linux
+*.sh text eol=lf

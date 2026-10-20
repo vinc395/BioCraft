@@ -1,0 +1,42 @@
+# Downloads the open icon sources and builds the BioCanvas library (cleaned SVGZ + thumbnails +
+# index.json) as a zip artifact. Run it manually ("Run workflow"); it takes about 30–45 minutes.
+name: Build icon library
+
+on:
+  workflow_dispatch:
+
+jobs:
+  library:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: swatinem/rust-cache@v2
+
+      - name: Fonts used when labels inside icons are measured
+        run: sudo apt-get update && sudo apt-get install -y fonts-liberation fonts-dejavu-core
+
+      - name: Download sources
+        run: |
+          node tools/fetch-bioicons.mjs
+          node tools/fetch-nih-bioart.mjs 1100
+          node tools/fetch-healthicons.mjs
+          node --max-old-space-size=8192 tools/fetch-servier-kits.mjs
+          node tools/fetch-reactome.mjs
+          node tools/fetch-phylopic.mjs
+
+      - name: Build library
+        run: cargo run --release -p biocanvas-libbuild
+
+      - name: Zip
+        run: zip -qr biocanvas-library.zip library
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: biocanvas-library
+          path: biocanvas-library.zip

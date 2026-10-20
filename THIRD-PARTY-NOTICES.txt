@@ -1,0 +1,605 @@
+BioCraft — third-party notices
+==============================
+
+BioCraft's own code is licensed under MIT OR Apache-2.0. It ships with a library of icons from
+open collections and is built from open-source software; their notices follow.
+
+1. The icon library
+-------------------
+
+17,883 icons. Every icon keeps its own licence; its author, licence and source link are
+recorded in library/index.json, and BioCraft's Credits tab and licence & attribution report list
+the credits a figure needs.
+
+BioCraft Originals
+  336 CC0 1.0 (public domain dedication)
+  Credit: BioCraft Originals (CC0)
+
+Servier Medical Art — https://smart.servier.com
+  3,841 CC BY 4.0, 183 CC BY 3.0
+  Credit: Servier Medical Art (smart.servier.com), licensed under CC BY 3.0/4.0
+
+NIH BioArt Source — https://bioart.niaid.nih.gov
+  4,751 Public domain (e.g. US government works)
+  Credit: NIAID NIH BioArt Source (bioart.niaid.nih.gov)
+
+Reactome Icon Library — https://reactome.org/icon-lib
+  2,571 CC BY 4.0
+  Credit: Reactome Icon Library (reactome.org/icon-lib), licensed under CC BY 4.0
+
+Bioicons — https://bioicons.com
+  486 CC0 1.0 (public domain dedication), 251 CC BY 4.0, 39 MIT, 35 CC BY-SA 4.0, 4 CC BY-SA 3.0, 3 BSD, 3 CC BY 3.0
+  Credit: Bioicons (bioicons.com), individual authors and licences as listed
+
+SciDraw — https://scidraw.io
+  609 CC BY 4.0, 142 CC0 1.0 (public domain dedication)
+  Credit: SciDraw (scidraw.io) — drawings by their authors, licensed under CC BY 4.0 (some CC0); see each drawing's DOI
+
+DBCLS TogoTV — https://togotv.dbcls.jp/en/pics.html
+  630 CC BY 4.0, 1 CC0 1.0 (public domain dedication)
+  Credit: DBCLS TogoTV (togotv.dbcls.jp), licensed under CC BY 4.0
+
+PhyloPic — https://www.phylopic.org
+  2,110 CC0 1.0 (public domain dedication), 238 CC BY 4.0, 90 Public domain (e.g. US government works), 62 CC BY 3.0
+  Credit: PhyloPic (phylopic.org); CC0 / public domain images need no credit, CC BY images are credited to their authors
+
+Health Icons — https://healthicons.org
+  1,498 MIT
+  Credit: Health Icons (healthicons.org), MIT licence
+
+Licences
+  CC0 1.0 (public domain dedication) — https://creativecommons.org/publicdomain/zero/1.0/
+  Public domain (e.g. US government works)
+  CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+  CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+  CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0/
+  CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+  MIT — see the text below
+  BSD — see the text below
+
+MIT licence — icons by Michael-Swift, Kathryn Kananen, dbs-sticky, OpenMM, Health Icons (Resolve to Save Lives)
+
+Copyright (c) Michael-Swift, Kathryn Kananen, dbs-sticky, OpenMM, Health Icons (Resolve to Save Lives)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+BSD licence — icons by Jupyter, Facebook, Google
+
+Copyright (c) Jupyter, Facebook, Google. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted
+provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright notice, this list of conditions
+   and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of
+   conditions and the following disclaimer in the documentation and/or other materials provided
+   with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used to
+   endorse or promote products derived from this software without specific prior written
+   permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+2. Open-source software
+-----------------------
+
+BioCraft is built from these Rust crates (name, version — licence), on every platform it runs on.
+Their licence texts are at https://crates.io/crates/<name>.
+
+  adler2 v2.0.1 — 0BSD OR MIT OR Apache-2.0
+  aho-corasick v1.1.5 — Unlicense OR MIT
+  alloc-no-stdlib v3.0.0 — BSD-3-Clause
+  alloc-stdlib v0.3.0 — BSD-3-Clause
+  android_system_properties v0.1.6 — MIT OR Apache-2.0
+  anyhow v1.0.104 — MIT OR Apache-2.0
+  arrayref v0.3.9 — BSD-2-Clause
+  arrayvec v0.7.8 — MIT OR Apache-2.0
+  ascii v1.1.0 — Apache-2.0 OR MIT
+  ashpd v0.11.1 — MIT
+  async-broadcast v0.7.2 — MIT OR Apache-2.0
+  async-channel v2.5.0 — Apache-2.0 OR MIT
+  async-executor v1.14.0 — Apache-2.0 OR MIT
+  async-fs v2.2.0 — Apache-2.0 OR MIT
+  async-io v2.6.0 — Apache-2.0 OR MIT
+  async-lock v3.4.2 — Apache-2.0 OR MIT
+  async-net v2.0.0 — Apache-2.0 OR MIT
+  async-process v2.5.0 — Apache-2.0 OR MIT
+  async-recursion v1.2.0 — MIT OR Apache-2.0
+  async-signal v0.2.14 — Apache-2.0 OR MIT
+  async-task v4.7.1 — Apache-2.0 OR MIT
+  async-trait v0.1.92 — MIT OR Apache-2.0
+  atk v0.18.2 — MIT
+  atk-sys v0.18.2 — MIT
+  atomic-waker v1.1.2 — Apache-2.0 OR MIT
+  base64 v0.21.7 — MIT OR Apache-2.0
+  base64 v0.22.1 — MIT OR Apache-2.0
+  base64 v0.23.1 — MIT OR Apache-2.0
+  bit-set v0.8.0 — Apache-2.0 OR MIT
+  bit-vec v0.8.0 — Apache-2.0 OR MIT
+  bitflags v1.3.2 — MIT/Apache-2.0
+  bitflags v2.13.2 — MIT OR Apache-2.0
+  block-buffer v0.10.4 — MIT OR Apache-2.0
+  block2 v0.6.2 — MIT
+  blocking v1.7.0 — Apache-2.0 OR MIT
+  brotli v9.0.0 — BSD-3-Clause AND MIT
+  brotli-decompressor v6.0.1 — BSD-3-Clause/MIT
+  bumpalo v3.20.3 — MIT OR Apache-2.0
+  bytemuck v1.25.2 — Zlib OR Apache-2.0 OR MIT
+  bytemuck_derive v1.12.1 — Zlib OR Apache-2.0 OR MIT
+  byteorder v1.5.0 — Unlicense OR MIT
+  byteorder-lite v0.1.0 — Unlicense OR MIT
+  bytes v1.12.1 — MIT
+  cairo-rs v0.18.5 — MIT
+  cairo-sys-rs v0.18.2 — MIT
+  camino v1.2.6 — MIT OR Apache-2.0
+  cargo_metadata v0.19.2 — MIT
+  cargo-platform v0.1.9 — MIT OR Apache-2.0
+  cesu8 v1.1.0 — Apache-2.0/MIT
+  cfb v0.14.0 — MIT
+  cfg-if v1.0.5 — MIT OR Apache-2.0
+  chrono v0.4.45 — MIT OR Apache-2.0
+  chunked_transfer v1.5.0 — MIT OR Apache-2.0
+  color_quant v1.1.0 — MIT
+  combine v4.6.9 — MIT
+  concurrent-queue v2.5.0 — Apache-2.0 OR MIT
+  cookie v0.18.2 — MIT OR Apache-2.0
+  core_maths v0.1.1 — MIT
+  core-foundation v0.10.1 — MIT OR Apache-2.0
+  core-foundation-sys v0.8.7 — MIT OR Apache-2.0
+  core-graphics v0.25.0 — MIT OR Apache-2.0
+  core-graphics-types v0.2.0 — MIT OR Apache-2.0
+  cpufeatures v0.2.17 — MIT OR Apache-2.0
+  crc32fast v1.5.2 — MIT OR Apache-2.0
+  crossbeam-channel v0.5.17 — MIT OR Apache-2.0
+  crossbeam-utils v0.8.23 — MIT OR Apache-2.0
+  crypto-common v0.1.7 — MIT OR Apache-2.0
+  cssparser v0.37.0 — MPL-2.0
+  cssparser-macros v0.7.1 — MPL-2.0
+  ctor v1.0.13 — Apache-2.0 OR MIT
+  darling v0.24.1 — MIT
+  darling_core v0.24.1 — MIT
+  darling_macro v0.24.1 — MIT
+  data-url v0.3.2 — MIT OR Apache-2.0
+  dbus v0.9.12 — Apache-2.0/MIT
+  deranged v0.5.9 — MIT OR Apache-2.0
+  derive_more v2.1.1 — MIT
+  derive_more-impl v2.1.1 — MIT
+  digest v0.10.7 — MIT OR Apache-2.0
+  dirs v7.0.0 — MIT OR Apache-2.0
+  dirs-sys v0.5.0 — MIT OR Apache-2.0
+  dispatch2 v0.3.1 — Zlib OR Apache-2.0 OR MIT
+  displaydoc v0.2.7 — MIT OR Apache-2.0
+  dlib v0.5.3 — MIT
+  dlopen2 v0.8.2 — MIT
+  dlopen2_derive v0.4.3 — MIT
+  dom_query v0.28.0 — MIT
+  downcast-rs v1.2.1 — MIT/Apache-2.0
+  dpi v0.1.2 — Apache-2.0 AND MIT
+  dtoa v1.0.11 — MIT OR Apache-2.0
+  dtoa-short v0.3.5 — MPL-2.0
+  dunce v1.0.5 — CC0-1.0 OR MIT-0 OR Apache-2.0
+  dyn-clone v1.0.20 — MIT OR Apache-2.0
+  embed_plist v1.2.2 — MIT OR Apache-2.0
+  endi v1.1.1 — MIT
+  enumflags2 v0.7.12 — MIT OR Apache-2.0
+  enumflags2_derive v0.7.12 — MIT OR Apache-2.0
+  equivalent v1.0.3 — Apache-2.0 OR MIT
+  erased-serde v0.4.10 — MIT OR Apache-2.0
+  errno v0.3.14 — MIT OR Apache-2.0
+  event-listener v5.4.2 — Apache-2.0 OR MIT
+  event-listener-strategy v0.5.4 — Apache-2.0 OR MIT
+  fastrand v2.5.0 — Apache-2.0 OR MIT
+  fdeflate v0.3.7 — MIT OR Apache-2.0
+  field-offset v0.3.6 — MIT OR Apache-2.0
+  flate2 v1.1.10 — MIT OR Apache-2.0
+  float-cmp v0.9.0 — MIT
+  fnv v1.0.7 — Apache-2.0 / MIT
+  foldhash v0.2.0 — Zlib
+  font-types v0.11.3 — MIT OR Apache-2.0
+  fontconfig-parser v0.5.8 — MIT
+  fontdb v0.23.0 — MIT
+  foreign-types v0.5.0 — MIT/Apache-2.0
+  foreign-types-macros v0.2.4 — MIT/Apache-2.0
+  foreign-types-shared v0.3.1 — MIT/Apache-2.0
+  form_urlencoded v1.2.2 — MIT OR Apache-2.0
+  futures-channel v0.3.34 — MIT OR Apache-2.0
+  futures-core v0.3.34 — MIT OR Apache-2.0
+  futures-executor v0.3.34 — MIT OR Apache-2.0
+  futures-io v0.3.34 — MIT OR Apache-2.0
+  futures-lite v2.6.1 — Apache-2.0 OR MIT
+  futures-macro v0.3.34 — MIT OR Apache-2.0
+  futures-sink v0.3.34 — MIT OR Apache-2.0
+  futures-task v0.3.34 — MIT OR Apache-2.0
+  futures-util v0.3.34 — MIT OR Apache-2.0
+  gdk v0.18.2 — MIT
+  gdk-pixbuf v0.18.5 — MIT
+  gdk-pixbuf-sys v0.18.0 — MIT
+  gdk-sys v0.18.2 — MIT
+  gdkwayland-sys v0.18.2 — MIT
+  gdkx11 v0.18.2 — MIT
+  gdkx11-sys v0.18.2 — MIT
+  generic-array v0.14.7 — MIT
+  getrandom v0.3.4 — MIT OR Apache-2.0
+  getrandom v0.4.3 — MIT OR Apache-2.0
+  gif v0.13.3 — MIT OR Apache-2.0
+  gif v0.14.2 — MIT OR Apache-2.0
+  gio v0.18.4 — MIT
+  gio-sys v0.18.1 — MIT
+  glib v0.18.5 — MIT
+  glib-macros v0.18.5 — MIT
+  glib-sys v0.18.1 — MIT
+  glob v0.3.4 — MIT OR Apache-2.0
+  gobject-sys v0.18.0 — MIT
+  gtk v0.18.2 — MIT
+  gtk-sys v0.18.2 — MIT
+  gtk3-macros v0.18.2 — MIT
+  hashbrown v0.12.3 — MIT OR Apache-2.0
+  hashbrown v0.17.1 — MIT OR Apache-2.0
+  heck v0.4.1 — MIT OR Apache-2.0
+  heck v0.5.0 — MIT OR Apache-2.0
+  hermit-abi v0.5.3 — MIT OR Apache-2.0
+  hex v0.4.3 — MIT OR Apache-2.0
+  html5ever v0.39.0 — MIT OR Apache-2.0
+  http v1.5.0 — MIT OR Apache-2.0
+  http-body v1.1.0 — MIT
+  http-body-util v0.1.5 — MIT
+  httparse v1.10.1 — MIT OR Apache-2.0
+  httpdate v1.0.3 — MIT OR Apache-2.0
+  hyper v1.12.0 — MIT
+  hyper-util v0.1.21 — MIT
+  iana-time-zone v0.1.65 — MIT OR Apache-2.0
+  iana-time-zone-haiku v0.1.2 — MIT OR Apache-2.0
+  ico v0.5.0 — MIT
+  icu_collections v2.3.0 — Unicode-3.0
+  icu_locale_core v2.3.0 — Unicode-3.0
+  icu_normalizer v2.3.0 — Unicode-3.0
+  icu_normalizer_data v2.3.0 — Unicode-3.0
+  icu_properties v2.3.0 — Unicode-3.0
+  icu_properties_data v2.3.0 — Unicode-3.0
+  icu_provider v2.3.1 — Unicode-3.0
+  ident_case v1.0.1 — MIT/Apache-2.0
+  idna v1.1.0 — MIT OR Apache-2.0
+  idna_adapter v1.2.2 — Apache-2.0 OR MIT
+  image v0.25.10 — MIT OR Apache-2.0
+  image-webp v0.2.4 — MIT OR Apache-2.0
+  imagesize v0.13.0 — MIT
+  indexmap v1.9.3 — Apache-2.0 OR MIT
+  indexmap v2.14.2 — Apache-2.0 OR MIT
+  infer v0.22.0 — MIT
+  ipnet v2.12.2 — MIT OR Apache-2.0
+  itoa v1.0.18 — MIT OR Apache-2.0
+  javascriptcore-rs v1.1.2 — MIT
+  javascriptcore-rs-sys v1.1.1 — MIT
+  jni v0.21.1 — MIT/Apache-2.0
+  jni-sys v0.3.1 — MIT OR Apache-2.0
+  jni-sys v0.4.1 — MIT OR Apache-2.0
+  jni-sys-macros v0.4.1 — MIT OR Apache-2.0
+  jpeg-decoder v0.3.2 — MIT OR Apache-2.0
+  js-sys v0.3.106 — MIT OR Apache-2.0
+  json-patch v4.2.0 — MIT/Apache-2.0
+  jsonptr v0.7.1 — MIT OR Apache-2.0
+  keyboard-types v0.8.3 — MIT OR Apache-2.0
+  kurbo v0.11.3 — Apache-2.0 OR MIT
+  kurbo v0.13.1 — Apache-2.0 OR MIT
+  libc v0.2.191 — MIT OR Apache-2.0
+  libdbus-sys v0.2.7 — Apache-2.0/MIT
+  libloading v0.8.9 — ISC
+  libm v0.2.16 — MIT
+  libredox v0.1.25 — MIT
+  linux-raw-sys v0.12.1 — Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+  litemap v0.8.3 — Unicode-3.0
+  lock_api v0.4.14 — MIT OR Apache-2.0
+  log v0.4.34 — MIT OR Apache-2.0
+  markup5ever v0.39.0 — MIT OR Apache-2.0
+  memchr v2.8.3 — Unlicense OR MIT
+  memmap2 v0.9.11 — MIT OR Apache-2.0
+  memoffset v0.9.1 — MIT
+  mime v0.3.17 — MIT OR Apache-2.0
+  miniz_oxide v0.8.9 — MIT OR Zlib OR Apache-2.0
+  miniz_oxide v0.9.1 — MIT OR Zlib OR Apache-2.0
+  mio v1.2.4 — MIT
+  moxcms v0.8.1 — BSD-3-Clause OR Apache-2.0
+  muda v0.20.0 — Apache-2.0 OR MIT
+  ndk v0.9.0 — MIT OR Apache-2.0
+  ndk-context v0.1.1 — MIT OR Apache-2.0
+  ndk-sys v0.6.0+11769913 — MIT OR Apache-2.0
+  new_debug_unreachable v1.0.6 — MIT
+  num_enum v0.7.6 — BSD-3-Clause OR MIT OR Apache-2.0
+  num_enum_derive v0.7.6 — BSD-3-Clause OR MIT OR Apache-2.0
+  num-conv v0.2.2 — MIT OR Apache-2.0
+  num-traits v0.2.19 — MIT OR Apache-2.0
+  objc2 v0.6.5 — MIT
+  objc2-app-kit v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-cloud-kit v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-core-data v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-core-foundation v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-core-graphics v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-core-image v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-core-location v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-core-text v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-encode v4.1.0 — MIT
+  objc2-exception-helper v0.1.1 — Zlib OR Apache-2.0 OR MIT
+  objc2-foundation v0.3.2 — MIT
+  objc2-quartz-core v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-ui-kit v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-user-notifications v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  objc2-web-kit v0.3.2 — Zlib OR Apache-2.0 OR MIT
+  once_cell v1.21.4 — MIT OR Apache-2.0
+  option-ext v0.2.0 — MPL-2.0
+  ordered-stream v0.2.0 — MIT OR Apache-2.0
+  pango v0.18.3 — MIT
+  pango-sys v0.18.0 — MIT
+  parking v2.2.1 — Apache-2.0 OR MIT
+  parking_lot v0.12.5 — MIT OR Apache-2.0
+  parking_lot_core v0.9.12 — MIT OR Apache-2.0
+  pdf-writer v0.12.1 — MIT OR Apache-2.0
+  percent-encoding v2.3.2 — MIT OR Apache-2.0
+  phf v0.13.1 — MIT
+  phf_generator v0.13.1 — MIT
+  phf_macros v0.13.1 — MIT
+  phf_shared v0.13.1 — MIT
+  pico-args v0.5.0 — MIT
+  pin-project-lite v0.2.17 — Apache-2.0 OR MIT
+  piper v0.2.5 — MIT OR Apache-2.0
+  plist v1.10.1 — MIT
+  png v0.17.16 — MIT OR Apache-2.0
+  png v0.18.1 — MIT OR Apache-2.0
+  polling v3.11.0 — Apache-2.0 OR MIT
+  pollster v0.4.0 — Apache-2.0/MIT
+  polycool v0.4.0 — MIT OR Apache-2.0
+  potential_utf v0.1.6 — Unicode-3.0
+  powerfmt v0.2.1 — MIT OR Apache-2.0
+  ppv-lite86 v0.2.21 — MIT OR Apache-2.0
+  precomputed-hash v0.1.1 — MIT
+  proc-macro-crate v1.3.1 — MIT OR Apache-2.0
+  proc-macro-crate v2.0.2 — MIT OR Apache-2.0
+  proc-macro-crate v3.5.0 — MIT OR Apache-2.0
+  proc-macro-error v1.0.4 — MIT OR Apache-2.0
+  proc-macro-error-attr v1.0.4 — MIT OR Apache-2.0
+  proc-macro2 v1.0.107 — MIT OR Apache-2.0
+  pxfm v0.1.30 — BSD-3-Clause OR Apache-2.0
+  quick-error v2.0.1 — MIT/Apache-2.0
+  quick-xml v0.41.0 — MIT
+  quick-xml v0.42.0 — MIT
+  quote v1.0.47 — MIT OR Apache-2.0
+  r-efi v5.3.0 — MIT OR Apache-2.0 OR LGPL-2.1-or-later
+  r-efi v6.0.0 — MIT OR Apache-2.0 OR LGPL-2.1-or-later
+  rand v0.9.5 — MIT OR Apache-2.0
+  rand_chacha v0.9.0 — MIT OR Apache-2.0
+  rand_core v0.9.5 — MIT OR Apache-2.0
+  raw-window-handle v0.6.2 — MIT OR Apache-2.0 OR Zlib
+  read-fonts v0.39.2 — MIT OR Apache-2.0
+  redox_syscall v0.5.18 — MIT
+  redox_users v0.5.3 — MIT
+  regex v1.13.1 — MIT OR Apache-2.0
+  regex-automata v0.4.18 — MIT OR Apache-2.0
+  regex-syntax v0.8.11 — MIT OR Apache-2.0
+  reqwest v0.13.5 — MIT OR Apache-2.0
+  resvg v0.45.1 — Apache-2.0 OR MIT
+  rfd v0.15.4 — MIT
+  rgb v0.8.53 — MIT
+  roxmltree v0.20.0 — MIT OR Apache-2.0
+  rustc-hash v2.1.3 — Apache-2.0 OR MIT
+  rustix v1.1.5 — Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+  rustversion v1.0.23 — MIT OR Apache-2.0
+  rustybuzz v0.20.1 — MIT
+  ryu v1.0.23 — Apache-2.0 OR BSL-1.0
+  same-file v1.0.6 — Unlicense/MIT
+  schemars v0.8.22 — MIT
+  schemars_derive v0.8.22 — MIT
+  scoped-tls v1.0.1 — MIT/Apache-2.0
+  scopeguard v1.2.0 — MIT OR Apache-2.0
+  selectors v0.38.0 — MPL-2.0
+  semver v1.0.28 — MIT OR Apache-2.0
+  serde v1.0.229 — MIT OR Apache-2.0
+  serde_core v1.0.229 — MIT OR Apache-2.0
+  serde_derive v1.0.229 — MIT OR Apache-2.0
+  serde_derive_internals v0.29.1 — MIT OR Apache-2.0
+  serde_json v1.0.154 — MIT OR Apache-2.0
+  serde_repr v0.1.21 — MIT OR Apache-2.0
+  serde_spanned v0.6.9 — MIT OR Apache-2.0
+  serde_spanned v1.1.2 — MIT OR Apache-2.0
+  serde_with v3.24.0 — MIT OR Apache-2.0
+  serde_with_macros v3.24.0 — MIT OR Apache-2.0
+  serde-untagged v0.1.9 — MIT OR Apache-2.0
+  serialize-to-javascript v0.1.2 — MIT OR Apache-2.0
+  serialize-to-javascript-impl v0.1.2 — MIT OR Apache-2.0
+  servo_arc v0.4.3 — MIT OR Apache-2.0
+  sha2 v0.10.9 — MIT OR Apache-2.0
+  signal-hook-registry v1.4.8 — MIT OR Apache-2.0
+  simd-adler32 v0.3.10 — MIT
+  simplecss v0.2.2 — Apache-2.0 OR MIT
+  siphasher v1.0.4 — MIT OR Apache-2.0
+  skrifa v0.42.1 — MIT OR Apache-2.0
+  slab v0.4.12 — MIT
+  slotmap v1.1.1 — Zlib
+  smallvec v1.16.3 — MIT OR Apache-2.0
+  socket2 v0.6.5 — MIT OR Apache-2.0
+  softbuffer v0.4.8 — MIT OR Apache-2.0
+  soup3 v0.5.0 — MIT
+  soup3-sys v0.5.0 — MIT
+  stable_deref_trait v1.2.1 — MIT OR Apache-2.0
+  strict-num v0.1.1 — MIT
+  string_cache v0.9.0 — MIT OR Apache-2.0
+  strsim v0.11.1 — MIT
+  subsetter v0.2.6 — MIT OR Apache-2.0
+  svg2pdf v0.13.0 — MIT OR Apache-2.0
+  svgtypes v0.15.3 — Apache-2.0 OR MIT
+  swift-rs v1.0.9 — MIT OR Apache-2.0
+  syn v1.0.109 — MIT OR Apache-2.0
+  syn v2.0.119 — MIT OR Apache-2.0
+  syn v3.0.9 — MIT OR Apache-2.0
+  sync_wrapper v1.0.2 — Apache-2.0
+  synstructure v0.14.0 — MIT
+  tao v0.37.1 — Apache-2.0
+  tao-macros v0.1.4 — MIT OR Apache-2.0
+  tauri v2.12.4 — Apache-2.0 OR MIT
+  tauri-codegen v2.7.3 — Apache-2.0 OR MIT
+  tauri-macros v2.7.3 — Apache-2.0 OR MIT
+  tauri-runtime v2.12.2 — Apache-2.0 OR MIT
+  tauri-runtime-wry v2.12.2 — Apache-2.0 OR MIT
+  tauri-utils v2.10.2 — Apache-2.0 OR MIT
+  tempfile v3.27.0 — MIT OR Apache-2.0
+  tendril v0.5.1 — MIT OR Apache-2.0
+  thiserror v1.0.69 — MIT OR Apache-2.0
+  thiserror v2.0.21 — MIT OR Apache-2.0
+  thiserror-impl v1.0.69 — MIT OR Apache-2.0
+  thiserror-impl v2.0.21 — MIT OR Apache-2.0
+  tiff v0.9.1 — MIT
+  time v0.3.55 — MIT OR Apache-2.0
+  time-core v0.1.9 — MIT OR Apache-2.0
+  time-macros v0.2.32 — MIT OR Apache-2.0
+  tiny_http v0.12.0 — MIT OR Apache-2.0
+  tiny-skia v0.11.4 — BSD-3-Clause
+  tiny-skia-path v0.11.4 — BSD-3-Clause
+  tinystr v0.8.4 — Unicode-3.0
+  tinyvec v1.13.3 — Zlib OR Apache-2.0 OR MIT
+  tokio v1.53.3 — MIT
+  tokio-util v0.7.20 — MIT
+  toml v1.1.8+spec-1.1.0 — MIT OR Apache-2.0
+  toml_datetime v0.6.3 — MIT OR Apache-2.0
+  toml_datetime v1.1.2+spec-1.1.0 — MIT OR Apache-2.0
+  toml_edit v0.19.15 — MIT OR Apache-2.0
+  toml_edit v0.20.2 — MIT OR Apache-2.0
+  toml_edit v0.25.17+spec-1.1.0 — MIT OR Apache-2.0
+  toml_parser v1.1.5+spec-1.1.0 — MIT OR Apache-2.0
+  toml_writer v1.1.3+spec-1.1.0 — MIT OR Apache-2.0
+  tower v0.5.3 — MIT
+  tower-http v0.6.11 — MIT
+  tower-layer v0.3.3 — MIT
+  tower-service v0.3.3 — MIT
+  tracing v0.1.44 — MIT
+  tracing-attributes v0.1.31 — MIT
+  tracing-core v0.1.36 — MIT
+  try-lock v0.2.5 — MIT
+  ttf-parser v0.25.1 — MIT OR Apache-2.0
+  typeid v1.0.3 — MIT OR Apache-2.0
+  typenum v1.20.1 — MIT OR Apache-2.0
+  uds_windows v1.2.1 — MIT
+  unicode-bidi v0.3.18 — MIT OR Apache-2.0
+  unicode-bidi-mirroring v0.4.0 — MIT/Apache-2.0
+  unicode-ccc v0.4.0 — MIT/Apache-2.0
+  unicode-ident v1.0.27 — (MIT OR Apache-2.0) AND Unicode-3.0
+  unicode-properties v0.1.4 — MIT/Apache-2.0
+  unicode-script v0.5.8 — MIT OR Apache-2.0
+  unicode-segmentation v1.13.3 — MIT OR Apache-2.0
+  unicode-vo v0.1.0 — MIT/Apache-2.0
+  url v2.5.8 — MIT OR Apache-2.0
+  urlencoding v2.1.3 — MIT
+  urlpattern v0.6.0 — MIT
+  usvg v0.45.1 — Apache-2.0 OR MIT
+  utf8_iter v1.0.4 — Apache-2.0 OR MIT
+  uuid v1.28.0 — Apache-2.0 OR MIT
+  walkdir v2.5.0 — Unlicense/MIT
+  want v0.3.2 — MIT
+  wasi v0.11.1+wasi-snapshot-preview1 — Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+  wasip2 v1.0.4+wasi-0.2.12 — Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+  wasm-bindgen v0.2.129 — MIT OR Apache-2.0
+  wasm-bindgen-futures v0.4.79 — MIT OR Apache-2.0
+  wasm-bindgen-macro v0.2.129 — MIT OR Apache-2.0
+  wasm-bindgen-macro-support v0.2.129 — MIT OR Apache-2.0
+  wasm-bindgen-shared v0.2.129 — MIT OR Apache-2.0
+  wasm-streams v0.5.0 — MIT OR Apache-2.0
+  wayland-backend v0.3.17 — MIT
+  wayland-client v0.31.15 — MIT
+  wayland-protocols v0.32.13 — MIT
+  wayland-scanner v0.31.11 — MIT
+  wayland-sys v0.31.11 — MIT
+  web_atoms v0.2.6 — MIT OR Apache-2.0
+  web-sys v0.3.106 — MIT OR Apache-2.0
+  web-time v1.1.0 — MIT OR Apache-2.0
+  webkit2gtk v2.0.2 — MIT
+  webkit2gtk-sys v2.0.2 — MIT
+  webview2-com v0.39.1 — MIT
+  webview2-com-macros v0.8.1 — MIT
+  webview2-com-sys v0.39.1 — MIT
+  weezl v0.1.12 — MIT OR Apache-2.0
+  winapi v0.3.9 — MIT/Apache-2.0
+  winapi-i686-pc-windows-gnu v0.4.0 — MIT/Apache-2.0
+  winapi-util v0.1.11 — Unlicense OR MIT
+  winapi-x86_64-pc-windows-gnu v0.4.0 — MIT/Apache-2.0
+  window-vibrancy v0.8.1 — Apache-2.0 OR MIT
+  windows v0.62.2 — MIT OR Apache-2.0
+  windows_aarch64_gnullvm v0.42.2 — MIT OR Apache-2.0
+  windows_aarch64_gnullvm v0.52.6 — MIT OR Apache-2.0
+  windows_aarch64_msvc v0.42.2 — MIT OR Apache-2.0
+  windows_aarch64_msvc v0.52.6 — MIT OR Apache-2.0
+  windows_i686_gnu v0.42.2 — MIT OR Apache-2.0
+  windows_i686_gnu v0.52.6 — MIT OR Apache-2.0
+  windows_i686_gnullvm v0.52.6 — MIT OR Apache-2.0
+  windows_i686_msvc v0.42.2 — MIT OR Apache-2.0
+  windows_i686_msvc v0.52.6 — MIT OR Apache-2.0
+  windows_x86_64_gnu v0.42.2 — MIT OR Apache-2.0
+  windows_x86_64_gnu v0.52.6 — MIT OR Apache-2.0
+  windows_x86_64_gnullvm v0.42.2 — MIT OR Apache-2.0
+  windows_x86_64_gnullvm v0.52.6 — MIT OR Apache-2.0
+  windows_x86_64_msvc v0.42.2 — MIT OR Apache-2.0
+  windows_x86_64_msvc v0.52.6 — MIT OR Apache-2.0
+  windows-collections v0.3.2 — MIT OR Apache-2.0
+  windows-core v0.62.2 — MIT OR Apache-2.0
+  windows-future v0.3.2 — MIT OR Apache-2.0
+  windows-implement v0.60.2 — MIT OR Apache-2.0
+  windows-interface v0.59.3 — MIT OR Apache-2.0
+  windows-link v0.2.1 — MIT OR Apache-2.0
+  windows-numerics v0.3.1 — MIT OR Apache-2.0
+  windows-result v0.4.1 — MIT OR Apache-2.0
+  windows-strings v0.5.1 — MIT OR Apache-2.0
+  windows-sys v0.45.0 — MIT OR Apache-2.0
+  windows-sys v0.59.0 — MIT OR Apache-2.0
+  windows-sys v0.61.2 — MIT OR Apache-2.0
+  windows-targets v0.42.2 — MIT OR Apache-2.0
+  windows-targets v0.52.6 — MIT OR Apache-2.0
+  windows-threading v0.2.1 — MIT OR Apache-2.0
+  windows-version v0.1.7 — MIT OR Apache-2.0
+  winnow v0.5.40 — MIT
+  winnow v1.0.4 — MIT
+  wit-bindgen v0.57.1 — Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT
+  write-fonts v0.48.1 — MIT OR Apache-2.0
+  writeable v0.6.4 — Unicode-3.0
+  wry v0.57.0 — Apache-2.0 OR MIT
+  x11 v2.21.0 — MIT
+  x11-dl v2.21.0 — MIT
+  xmlwriter v0.1.0 — MIT
+  yoke v0.8.3 — Unicode-3.0
+  yoke-derive v0.8.4 — Unicode-3.0
+  zbus v5.19.0 — MIT
+  zbus_macros v5.19.0 — MIT
+  zbus_names v4.3.5 — MIT
+  zcheapstr v1.1.0 — MIT
+  zerocopy v0.8.63 — BSD-2-Clause OR Apache-2.0 OR MIT
+  zerocopy-derive v0.8.63 — BSD-2-Clause OR Apache-2.0 OR MIT
+  zerofrom v0.1.8 — Unicode-3.0
+  zerofrom-derive v0.1.8 — Unicode-3.0
+  zerotrie v0.2.5 — Unicode-3.0
+  zerovec v0.11.8 — Unicode-3.0
+  zerovec-derive v0.11.6 — Unicode-3.0
+  zmij v1.0.23 — MIT
+  zune-core v0.4.12 — MIT OR Apache-2.0 OR Zlib
+  zune-core v0.5.3 — MIT OR Apache-2.0 OR Zlib
+  zune-jpeg v0.4.21 — MIT OR Apache-2.0 OR Zlib
+  zune-jpeg v0.5.15 — MIT OR Apache-2.0 OR Zlib
+  zvariant v5.15.1 — MIT
+  zvariant_derive v5.15.1 — MIT
+  zvariant_utils v4.2.0 — MIT
+
+WebView2 (Windows) and WebKit (macOS) are part of the operating system.

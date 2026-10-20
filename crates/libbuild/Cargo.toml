@@ -1,0 +1,17 @@
+[package]
+name = "biocanvas-libbuild"
+description = "Builds the BioCanvas icon library from downloaded sources"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "biocanvas-libbuild"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+rayon.workspace = true
+biocanvas-core.workspace = true

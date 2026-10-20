@@ -1,0 +1,43 @@
+{
+  "_about": "Example figure spec for BioCraft's render_figure tool / `biocraft render`. Units are millimetres from the top-left corner.",
+  "width_mm": 178,
+  "height_mm": 100,
+  "background": "#ffffff",
+  "title": "RA synovitis graphical abstract",
+  "objects": [
+    { "type": "rect", "name": "Panel A", "x": 5, "y": 11, "w": 52, "h": 85, "fill": "#eef6fb", "stroke": null, "radius_mm": 3 },
+    { "type": "rect", "name": "Panel B", "x": 63, "y": 11, "w": 52, "h": 85, "fill": "#fdf0ed", "stroke": null, "radius_mm": 3 },
+    { "type": "rect", "name": "Panel C", "x": 121, "y": 11, "w": 52, "h": 85, "fill": "#f4f1fa", "stroke": null, "radius_mm": 3 },
+
+    { "type": "text", "text": "Rheumatoid arthritis: from synovitis to synovial tissue pathotypes", "x": 5, "y": 3, "size_pt": 10, "bold": true },
+    { "type": "text", "text": "A", "x": 7.5, "y": 12.5, "size_pt": 11, "bold": true },
+    { "type": "text", "text": "B", "x": 65.5, "y": 12.5, "size_pt": 11, "bold": true },
+    { "type": "text", "text": "C", "x": 123.5, "y": 12.5, "size_pt": 11, "bold": true },
+    { "type": "text", "text": "Healthy joint", "x": 31, "y": 13.8, "size_pt": 8, "bold": true, "align": "center" },
+    { "type": "text", "text": "Rheumatoid arthritis", "x": 89, "y": 13.8, "size_pt": 8, "bold": true, "align": "center" },
+    { "type": "text", "text": "Synovial pathotypes", "x": 147, "y": 13.8, "size_pt": 8, "bold": true, "align": "center" },
+
+    { "type": "icon", "id": "biocanvas/knee-joint-healthy", "cx": 31, "y": 20, "h": 37 },
+    { "type": "icon", "id": "biocanvas/synovium-healthy", "cx": 31, "y": 61, "w": 46 },
+    { "type": "text", "text": "Thin lining layer,\nfew immune cells", "x": 31, "y": 87.5, "size_pt": 6.5, "align": "center" },
+
+    { "type": "arrow", "from": [46, 38], "to": [72.5, 38], "width_pt": 1.25 },
+    { "type": "text", "text": "Disease onset", "x": 59.5, "y": 33.4, "size_pt": 6.5, "align": "center" },
+
+    { "type": "icon", "id": "biocanvas/knee-joint-rheumatoid-arthritis", "cx": 89, "y": 20, "h": 37 },
+    { "type": "icon", "id": "biocanvas/synovium-rheumatoid-arthritis", "cx": 89, "y": 59, "w": 40 },
+    { "type": "text", "text": "Lining hyperplasia,\nimmune cell infiltrate", "x": 89, "y": 87.5, "size_pt": 6.5, "align": "center" },
+    { "type": "text", "text": "DMARDs", "x": 113.5, "y": 46.5, "size_pt": 7, "bold": true, "color": "#d55e00", "align": "right" },
+    { "type": "inhibit", "from": [110.5, 51], "to": [106, 62.5], "color": "#d55e00", "width_pt": 1.25 },
+
+    { "type": "arrow", "from": [110, 79], "to": [121.5, 51], "curve_mm": -3, "width_pt": 1.25 },
+
+    { "type": "icon", "id": "biocanvas/synovium-rheumatoid-arthritis", "cx": 136, "y": 18.5, "w": 28, "name": "Lympho-myeloid" },
+    { "type": "icon", "id": "biocanvas/synovium-ra-diffuse-myeloid", "cx": 136, "y": 41, "w": 28, "name": "Diffuse-myeloid" },
+    { "type": "icon", "id": "biocanvas/synovium-ra-pauci-immune", "cx": 136, "y": 63.5, "w": 28, "name": "Pauci-immune" },
+    { "type": "text", "text": "Lympho-\nmyeloid", "x": 152, "y": 25, "size_pt": 7 },
+    { "type": "text", "text": "Diffuse-\nmyeloid", "x": 152, "y": 47.6, "size_pt": 7 },
+    { "type": "text", "text": "Pauci-\nimmune", "x": 152, "y": 69.8, "size_pt": 7 },
+    { "type": "text", "text": "Distinct cellular programmes\nguide treatment response", "x": 147, "y": 87.5, "size_pt": 6.5, "align": "center" }
+  ]
+}
