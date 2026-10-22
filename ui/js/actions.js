@@ -11,6 +11,7 @@ import { labelInfo, hasLabels } from "./labels.js";
 import { slotColorMap, overlayMap, grayMap, parseHex, toLch, normHex } from "./color.js";
 import { applyPreset, setIconColors } from "./style.js";
 import { bus, toast, uid, rotPt } from "./util.js";
+import { copyPicture } from "./clipimage.js";
 
 const assetCache = new Map();
 
@@ -139,7 +140,6 @@ export async function placeFiles(files, at = null, openDoc = null) {
 /* ---------- clipboard ---------- */
 
 let clip = null;
-const CLIP_MARK = "biocanvas/clipboard:";
 
 export function copySel() {
   endPreviews(); // copy the styles that are applied, not one being previewed
@@ -148,9 +148,8 @@ export function copySel() {
   const assets = {};
   for (const id of assetsUsed(objs)) assets[id] = state.doc.assets[id];
   clip = { objects: JSON.parse(JSON.stringify(objs)), assets };
-  try {
-    navigator.clipboard?.writeText(CLIP_MARK + JSON.stringify({ objects: clip.objects, assetIds: Object.keys(assets) }))?.catch(() => {});
-  } catch {}
+  // and a picture of them on the system clipboard, for PowerPoint, Word, Teams…
+  copyPicture(objs);
   return true;
 }
 

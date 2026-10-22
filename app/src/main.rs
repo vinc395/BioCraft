@@ -4,6 +4,7 @@
 mod agent;
 mod api;
 mod brush;
+mod clipboard;
 mod figure;
 mod gallery;
 mod labels;

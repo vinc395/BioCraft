@@ -26,3 +26,7 @@ tiny_http = "0.12"
 sha2 = "0.10"
 chrono = { version = "0.4", default-features = false, features = ["clock"] }
 ttf-parser = "0.25"
+
+[target.'cfg(windows)'.dependencies]
+# Copy: the selection as a picture on the system clipboard (clipboard.rs)
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_DataExchange", "Win32_System_Memory"] }

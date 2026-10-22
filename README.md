@@ -28,6 +28,9 @@ right-click BioCraft and choose Open, or click Open Anyway in System Settings �
   with a live preview of exactly what will be written (also in greyscale) and a **Publication
   permissions** panel: what the icons' licences allow (teaching, journals, open access, commercial
   use), what they ask, and a check against the journal's licence.
+- **Copy into PowerPoint, Word or Teams**: Copy (Ctrl+C, or right-click › Copy) also puts the
+  selection on the clipboard as a transparent PNG at 300 dpi, which pastes at the size it has in
+  BioCraft. Pasting back into BioCraft still pastes the objects themselves.
 - **Home page** (at start-up, or the ⌂ button / BioCraft logo): Create new with page-size presets
   (single/1.5/double column, slide, A4), **My files** with a preview of every figure, **project
   folders**, search, sort, grid or list, and per-figure actions (rename, duplicate, move to a folder,

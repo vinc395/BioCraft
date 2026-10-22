@@ -87,7 +87,7 @@ export function contextItems(at = null) {
   const allLocked = sel.length > 0 && sel.every((o) => o.locked);
   return [
     { label: "Cut", kbd: MOD + "X", run: cutSel, disabled: !free.length },
-    { label: "Copy", kbd: MOD + "C", run: copySel, disabled: !sel.length },
+    { label: "Copy", kbd: MOD + "C", run: copySel, disabled: !sel.length, title: "Also copies a picture with a transparent background, to paste into PowerPoint, Word or Teams" },
     { label: "Duplicate", kbd: MOD + "D, Alt+Drag", run: duplicateSel, disabled: !sel.length },
     { label: "Paste", kbd: MOD + "V", run: () => pasteClip(10, at), disabled: !hasClip() },
     { label: "Delete", kbd: "Delete, Backspace", run: deleteSel, disabled: !free.length },

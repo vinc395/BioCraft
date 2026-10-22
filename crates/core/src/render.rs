@@ -64,7 +64,8 @@ impl Renderer {
     }
 }
 
-fn straight_rgba(pm: &Pixmap) -> Vec<u8> {
+/// The pixels as straight (not premultiplied) RGBA, the way image files and the clipboard store them.
+pub fn straight_rgba(pm: &Pixmap) -> Vec<u8> {
     let mut out = Vec::with_capacity(pm.data().len());
     for p in pm.pixels() {
         let c = p.demultiply();

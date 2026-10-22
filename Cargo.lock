@@ -336,6 +336,7 @@ dependencies = [
  "tauri-build",
  "tiny_http",
  "ttf-parser",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]

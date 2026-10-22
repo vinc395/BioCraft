@@ -4,7 +4,7 @@ import { api, isDesktop, downloadResult, libUrl, sandbox } from "./api.js";
 import { state, newDoc, resetHistory, takeHistory, adoptHistory, undo, redo, canUndo, canRedo, setSelection, selectedObjs, assetsUsed, MM, endPreviews, docPx } from "./model.js";
 import { initCanvas, renderDoc, fitView, zoomAt, setTool, keys, screenToDoc, isEditingText, finishTextEdit, presetObjects, insertObject } from "./canvas.js";
 import {
-  placeIcon, placeFiles, placeSvgText, copySel, cutSel, pasteClip, duplicateSel, deleteSel, selectAll, selectSame, nudge,
+  placeIcon, placeFiles, placeSvgText, copySel, cutSel, pasteClip, hasClip, duplicateSel, deleteSel, selectAll, selectSame, nudge,
   groupSel, ungroupSel, arrange, align, distribute, flipSel, toggleLock,
 } from "./actions.js";
 import { initLibrary, importIcons, chooseLibrary, pickUploads, saveSelectionToLibrary, myLibrary, showMyLibrary } from "./library.js";
@@ -14,6 +14,7 @@ import { objectMarkup, documentSvg } from "./render.js";
 import { initPanels, refresh, showTab, openLink } from "./panels.js";
 import { exportDialog } from "./exporter.js";
 import { exportLicenceReport } from "./licence.js";
+import { isOurPicture } from "./clipimage.js";
 import { initHome, showHome, hideHome, homeOpen, homePrefs } from "./home.js";
 import { openMenu, closeMenus, modal, askText } from "./menus.js";
 import { initContextMenu, selectItems } from "./contextmenu.js";
@@ -488,7 +489,7 @@ const MENUS = {
     { label: "Redo", kbd: mod + "Shift+Z", run: redo, disabled: !canRedo() },
     "-",
     { label: "Cut", kbd: mod + "X", run: cutSel },
-    { label: "Copy", kbd: mod + "C", run: copySel },
+    { label: "Copy", kbd: mod + "C", run: copySel, title: "Also copies a picture with a transparent background, to paste into PowerPoint, Word or Teams" },
     { label: "Paste", kbd: mod + "V", run: () => pasteClip() },
     { label: "Duplicate", kbd: mod + "D", run: duplicateSel },
     { label: "Delete", kbd: "Del", run: deleteSel },
@@ -651,7 +652,7 @@ function shortcutsDialog() {
     ["L / A / I", "Line / arrow / inhibition line (start or end on an object to connect it)"], ["M or B", "Brush: path arrows, circular arrows, plasmids, freeform shapes, membranes, DNA, cells, vessels, axons…"],
     ["Double-click a brush", "Add a point (double-click a point to remove it)"],
     ["Double-click a legend row", "Rename it (legends, scale bars and panel labels are in the Insert menu)"],["/ or " + mod + "F", "Search the library"],
-    [mod + "Z / " + mod + "Shift+Z", "Undo / redo"], [mod + "C / X / V / D", "Copy / cut / paste / duplicate"],
+    [mod + "Z / " + mod + "Shift+Z", "Undo / redo"], [mod + "C / X / V / D", "Copy / cut / paste / duplicate (Copy also gives PowerPoint, Word and Teams a transparent picture)"],
     ["Del", "Delete"], ["Arrows (Shift)", "Nudge 1 px (10 px)"], [mod + "G / " + mod + "Shift+G", "Group / ungroup"],
     [mod + "[ / ]", "Send backward / bring forward"], ["Shift+H / Shift+V", "Flip"], [mod + "L", "Lock"],
     ["Shift while dragging", "Keep proportions / snap angles to 15°"], ["Alt while dragging", "Copy (move), from centre (shapes), don't connect (line ends), resize only the path (a brush's corner handles)"],
@@ -887,13 +888,11 @@ function initDrop() {
     if (typing(e) || isEditingText()) return;
     const dt = e.clipboardData;
     const text = dt?.getData("text/plain") || "";
-    if (text.startsWith("biocanvas/clipboard:")) {
-      e.preventDefault();
-      return pasteClip();
-    }
     const files = [...(dt?.files || [])];
     if (files.length) {
       e.preventDefault();
+      // the picture Copy put there: paste the copied objects themselves, not a picture of them
+      if (hasClip() && (await isOurPicture(files))) return pasteClip();
       return placeFiles(files);
     }
     const svg = dt?.getData("image/svg+xml") || (/^\s*(<\?xml[^>]*>\s*)?<svg[\s>]/i.test(text) ? text : "");

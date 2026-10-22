@@ -4,7 +4,7 @@
 use anyhow::{anyhow, bail, Context, Result};
 use base64::Engine;
 use crate::licence;
-use biocanvas_core::render::{encode_png, encode_tiff, to_pdf};
+use biocanvas_core::render::{encode_png, encode_tiff, straight_rgba, to_pdf};
 use biocanvas_core::{color::Rgb, palette, svgclean, Library, Renderer};
 use serde_json::{json, Value};
 use std::path::{Path, PathBuf};
@@ -339,6 +339,34 @@ pub fn dispatch(st: &AppState, cmd: &str, a: &Value, mode: Mode) -> Result<Value
             };
             deliver(mode, format, name, path, bytes)
         }
+
+        // Copy as a picture: {svg (the copied objects, cropped round them), dpi?} → a transparent PNG
+        // at `dpi` (300 by default, lowered for a selection of more than ~40 megapixels), with its
+        // resolution recorded so it pastes at the size it has in BioCraft. On the Windows desktop it goes
+        // straight onto the system clipboard (clipboard.rs) → {width, height, dpi, copied: true}.
+        // Elsewhere the page copies it → also {base64}.
+        "clipboard.picture" => {
+            let svg = need_str(a, "svg")?;
+            let r = st.renderer();
+            let tree = svgclean::parse(svg.as_bytes(), &r.options())?;
+            let size = tree.size();
+            let want = a.get("dpi").and_then(|v| v.as_f64()).unwrap_or(300.0).clamp(72.0, 1200.0) as f32;
+            let px = (size.width() * want / 96.0) * (size.height() * want / 96.0);
+            let dpi = if px > 40e6 { want * (40e6 / px).sqrt() } else { want };
+            let pm = r.render_scaled(&tree, dpi / 96.0, None)?;
+            let png = encode_png(&pm, Some(dpi))?;
+            let (w, h) = (pm.width(), pm.height());
+            if mode == Mode::Desktop && cfg!(windows) {
+                let dib = crate::clipboard::dibv5(&straight_rgba(&pm), w, h, dpi);
+                crate::clipboard::write(&png, &dib)?;
+                Ok(json!({ "width": w, "height": h, "dpi": dpi, "copied": true }))
+            } else {
+                Ok(json!({ "width": w, "height": h, "dpi": dpi, "copied": false, "base64": base64::engine::general_purpose::STANDARD.encode(&png) }))
+            }
+        }
+        // Whether the clipboard still holds the picture copied last (Windows desktop): pasting in
+        // BioCraft then pastes the copied objects, not a picture of them.
+        "clipboard.isOurs" => Ok(json!({ "ours": mode == Mode::Desktop && crate::clipboard::is_ours() })),
 
         // What the Export dialog shows before anything is written: {content, publication?} →
         // what the icons' licences allow and ask, and whether they fit the journal.
